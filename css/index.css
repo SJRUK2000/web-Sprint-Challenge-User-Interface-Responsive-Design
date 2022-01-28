@@ -50,7 +50,6 @@ table {
 * {
     box-sizing: border-box;
 }
-
 html{
     font-size:62.5%;
 }
@@ -59,7 +58,6 @@ body {
     line-height:1.5;
     font-size:1.6rem;
 }
-
 h1, h2, h3, h4, h5 {
     font-size: 2.5rem;
     margin-bottom: 2%;
@@ -83,35 +81,91 @@ section, footer{
     border-bottom: 2px solid #ff4b00;
     text-align: justify;
 }
-
 .top-content .text-container {
-    width: 35%;
+    width: 45%;
     padding: 0 1%;
     padding-bottom: 4%;  
+}
+.top-content .text-container h2{
+    text-align: center;
+}
+.bit-logo{
+    width:25%;
+}
+.jumbo-img{
+    width: 100%;
+}
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}
+.top-nav a{
+    text-decoration: none;
+    color: black;
+
+}
+.nav-div{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    margin: 2% 0 5% 0;
 }
 
 /*Middle Section Styles*/
 .middle-content {
     margin-bottom: 4%;
+    border-bottom: 2px solid #ff4b00;
 }
-
 .middle-content h2 {
     margin-bottom: 0;
 }
-
 .middle-content .boxes {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    height: 300px;
+    margin-bottom: 8%;
 }
-
 .middle-content .boxes .box {
     background: black;
-    margin: 4% 0;
+    margin: 4% 1%;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 16%;
+    height: 15vh;
+}
+#box1{
+    background-color: teal;
+}
+#box2{
+    background-color: gold;
+}
+#box3{
+    background-color: cadetblue;
+}
+#box4{
+    background-color: coral;
+}
+#box5{
+    background-color: crimson;
+}
+#box6{
+    background-color: forestgreen;
+}
+#box7{
+    background-color: darkorchid;
+}
+#box8{
+    background-color: hotpink;
+}
+#box9{
+    background-color: indigo;
+}
+#box10{
+    background-color: dodgerblue;
 }
 
 /*Bottom Section Styles*/
@@ -119,13 +173,23 @@ section, footer{
     display: flex;
     justify-content: space-between;
 }
-
 .bottom-content .text-container {
     width:25%;
 }
-
 .bottom-content .text-container:last-child {
     padding-right: 0;
+}
+.bottom-nav{
+    
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin: 4% 0 4% 0;
+}
+.bottom-nav a {
+    text-decoration: none;
+    color: white;
 }
 
 /*Footer Styles*/
@@ -134,7 +198,113 @@ footer {
     background-color: #ff4b00;
 }
 
+
 /*About Page Styles*/
-
-
+.top-section-about {
+    padding: 4% 0;
+    border-bottom: 2px #ff4b00 solid
+}
+.middle-section-about{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.strategy-about{
+    padding: 4% 0;
+    border-bottom: 2px #ff4b00 solid;
+    width: 45%;
+}
+.imges{
+    width: 100%
+}
+.working-about{
+    padding: 4% 0;
+    border-bottom: 2px #ff4b00 solid;
+    width: 45%;
+}
+.places-about{
+    padding: 4% 0;
+    border-bottom: 2px #ff4b00 solid;
+    width: 45%;
+}
+.collab-about{
+    padding: 4% 0;
+    border-bottom: 2px #ff4b00 solid;
+    width: 45%;
+}
+.bottom-section-about{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.work-together {
+    padding: 2% 0 6% 0;
+    text-align: justify;
+}
 /*Responsive Styles*/
+
+@media (max-width: 500px) {
+    .nav-div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .top-nav{
+        width: 100%
+    }
+    .top-content{
+        flex-direction: column;
+        width: 100%;
+    }
+    .top-content .text-container{
+        width: 100%;
+    }
+    .middle-content h2{
+        text-align: center;
+    }
+    .middle-content .boxes .box {
+        width: 45%;
+    }
+    .middle-content .boxes {
+        min-height: 800px;
+    }
+    .bottom-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .bottom-content .text-container{
+        padding: 3% 0 5% 0;
+        width: 100%;
+    }
+    h2{
+        padding: 2% 0 5% 0%;
+        text-align: center;
+    }
+    .bottom-nav{
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0;
+    }
+    /* about */
+    .middle-section-about{
+        flex-direction: column;
+    }
+    .bottom-section-about{
+        flex-direction: column;
+    }
+    .strategy-about{
+        width: 100%
+    }
+    .places-about{
+        width: 100%;
+    }
+    .collab-about{
+        width: 100%;
+    }
+    .working-about{
+        width: 100%;
+    }
+}
